@@ -10,3 +10,5 @@ SinglyListNode.prototype.getVal = function() {
 SinglyListNode.prototype.getNext = function() {
   return this.next;
 }
+
+module.exports = SinglyListNode;

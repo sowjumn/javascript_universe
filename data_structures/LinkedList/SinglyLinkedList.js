@@ -1,15 +1,4 @@
-function SinglyListNode(value, next) {
-  this.value = value;
-  this.next = next || null;
-}
-
-SinglyListNode.prototype.getVal = function() {
-  return this.value;
-}
-
-SinglyListNode.prototype.getNext = function() {
-  return this.next;
-}
+var SinglyListNode = require('./SinglyListNode');
 
 function SinglyLinkedList() {
   this.listHead = null;
