@@ -32,9 +32,9 @@
     var person1 = new Person('sowju', 30, 'Software Engineer');
     var person2 = new Person('Mudu', 30, 'Software Developer');
 ```
-    * *By convention, constructor functions start with a uppercase letter and non-constructor functions begin with a lower case. This is because constructors are simple functions that create objects*
-    * *Also the only difference between constuctor functions and regular functions are int he way they are called*
-    * *Calling a constructor function with a new operator essentially does the following*
-      * create a new object and assign the this value of the constructor to the new object(so this points to the new object)
-      * Execute the code inside the constuctor function
-      * Return the new object
+* *By convention, constructor functions start with a uppercase letter and non-constructor functions begin with a lower case. This is because constructors are simple functions that create objects*
+* *Also the only difference between constuctor functions and regular functions are int he way they are called*
+* *Calling a constructor function with a new operator essentially does the following*
+  * create a new object and assign the this value of the constructor to the new object(so this points to the new object)
+  * Execute the code inside the constuctor function
+  * Return the new object
