@@ -66,13 +66,37 @@
 ## Operators
 ### Unary operators
   * Operators that work on only one value
-```Javascript
+```javascript
   var age = 29;
   --age; // prefix
   ++age; // the variable value is changed before the statement is evaluated: prefix
   age--;
   age++; // The variable value is changed after the statement is evaluated
+  -age;
+  +age; // converts age using Number()
+
 ```
 ### Bitwise operators
   * Bitwise operators work with numbers at the base level. with bits that represent them in memory
-  * 
+  * All Numbers in ECMAScript are stored in IEEE-754 64 bit format, but the bitwise operators donot work directly on the 64-bit representation. Instead the value is converted into a 32 bit integer, the operation takes place, and the result is converted back into 64 bits. To the developer it appears only 32 bit integer exists
+  * Signed integers use the first 31 bits to represent the numeric value of the integer. The 32nd bit represents the sign(0 for positive, 1 for negative)
+  * negative numbers are stored in twos complement format(1's complement plus 1)
+  * Bitwise not operator (~) returns the one's complement of the number ( it negates the number and subtracts 1)
+  * & , | , ^ 
+  * << Bitwise left shift: Shifts the bits to the left by the given number and fills the empty bits with 0's
+  * >> Signed right shift: Shifts the bits to the right by the given number while preserving the sign (It fills the empty bits with the value of the sign bit)
+  * >>> unsigned right shift: (fills the empty bits with zeros regardless of the sign)
+
+### Logical Operators
+  * ! , && , ||
+  * &&, || are short circuited operators. If the first operand determines the result the second operand is never evaluated
+  * You can use this behavior to avoid assigning a null or undefined value to a variable
+```javascript
+  var myObject = preferredObject || backupObject;
+```
+### Arithmetic Operators
+  * *, +, -, /, %
+### Relational Operators
+  * <, >, <= , >=, ==, !=, ===
+  * == & != do type coercion
+  * === & !=== also called identically equal and not identically equal operators do not do type conversion
