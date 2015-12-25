@@ -31,7 +31,7 @@
   * concat(), slice(), splice() & indexOf() 
   * every() , filter(), map(), some(), reduce()
 
-  ## Function Type
+## Function Type
     * Functions are objects in ECMAScript and each function is an instance of the Function type that has properties and methods
     * function names are simply pointers to function objects
     * function declarations are read and available in an execution context before any code is executed: The JS engine hoists the function declarations to the top
@@ -52,7 +52,7 @@
       * the remaining arguments are passed directly into the function
     * bind() method creates a new function instance where the this value is bound to the value that was passed into bind()
 
-    ```javascript
+  ```javascript
       var o = { color: 'blue' };
       function sayColor() {
         alert(this.color);
