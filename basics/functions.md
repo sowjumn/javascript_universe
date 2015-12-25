@@ -32,25 +32,25 @@
   * every() , filter(), map(), some(), reduce()
 
 ## Function Type
-    * Functions are objects in ECMAScript and each function is an instance of the Function type that has properties and methods
-    * function names are simply pointers to function objects
-    * function declarations are read and available in an execution context before any code is executed: The JS engine hoists the function declarations to the top
-    * function expressions aren't complete until the execution reaches that line of code
-    * In ECMAScript function doesnt care how many arguments are passed in, nor does it care about the data types of those arguments: You can define a function with two arguments and pass in three arguments to it and the interpreter wouldnt complain; also there is no overloading
-    * Any named argument that is not passed into the function is automatically assigned the value of undefined
-    * Two special objects exist inside a function: arguments and this
-    * the arguments object contains all the arguments passed into the function
-    * the arguments object also contains a property named callee which is a pointer to the function that owns the arguments object: however, strict mode doesnot support using callee
-    * 'this' refers to the context object the function is operating on.
-    * the 'this' object is bound at runtime based on the context in which a function is executed: 
-      * when used inside global functions, this is equal to window in nonstrict mode and undefined in strict mode
-      * this is equal to the object when called as an object method
-    * apply() and call() are used to call a function with a specific this value
-    * apply() method accepts two arguments 1) the value of this inside the function and 2) an array of arguments
-    * call() method exhibits same behavior as apply(), but arguments are passed to it differently
-      * the value of this is the first argument
-      * the remaining arguments are passed directly into the function
-    * bind() method creates a new function instance where the this value is bound to the value that was passed into bind()
+  * Functions are objects in ECMAScript and each function is an instance of the Function type that has properties and methods
+  * function names are simply pointers to function objects
+  * function declarations are read and available in an execution context before any code is executed: The JS engine hoists the function declarations to the top
+  * function expressions aren't complete until the execution reaches that line of code
+  * In ECMAScript function doesnt care how many arguments are passed in, nor does it care about the data types of those arguments: You can define a function with two arguments and pass in three arguments to it and the interpreter wouldnt complain; also there is no overloading
+  * Any named argument that is not passed into the function is automatically assigned the value of undefined
+  * Two special objects exist inside a function: arguments and this
+  * the arguments object contains all the arguments passed into the function
+  * the arguments object also contains a property named callee which is a pointer to the function that owns the arguments object: however, strict mode doesnot support using callee
+  * 'this' refers to the context object the function is operating on.
+  * the 'this' object is bound at runtime based on the context in which a function is executed: 
+    * when used inside global functions, this is equal to window in nonstrict mode and undefined in strict mode
+    * this is equal to the object when called as an object method
+  * apply() and call() are used to call a function with a specific this value
+  * apply() method accepts two arguments 1) the value of this inside the function and 2) an array of arguments
+  * call() method exhibits same behavior as apply(), but arguments are passed to it differently
+    * the value of this is the first argument
+    * the remaining arguments are passed directly into the function
+  * bind() method creates a new function instance where the this value is bound to the value that was passed into bind()
 
   ```javascript
       var o = { color: 'blue' };
