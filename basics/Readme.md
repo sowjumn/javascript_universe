@@ -30,5 +30,49 @@
     * NaN is a special numeric value to indicate when an operation intended to return a number has failed. Example diving a number by 0
     * Use isNaN() function to check if the value is a NaN
 
-  ### Number Conversions
+### Number Conversions
+  *There are three functions to convert non numeric values into numbers*
+    * Number()
+    * parseInt()
+    * parseFloat()
 
+### String Data type
+  * The String data type represents a sequence of zero or more 16-bit unicode characters
+  * A string using double quotes is exactly the same as the string using single quotes
+  * Strings are immutable in ECMAScript, meaning that once they are created, their values cannot change
+
+```javascript
+  var lang = 'java';
+  lang = lang + 'script';
+```
+*What happens here is a new string is created with enough space for 10 characters and then filled with 'javascript' and the original string 'java' is destroyed and all of this happens behind the scenes and hence string concatenation is slow in older browsers*
+* String Conversions: toString() and String()
+* toString() method returns the string equivalent of the value
+* toString() when called on a number accepts a single argument: which is the radix in which to output the number
+
+```javascript
+  var num = 10;
+  num.toString(); // '10'
+  num.toString(2); // '1010'
+  num.toString(8); // '12'
+  num.toString(10); // '10'
+  num.toString(16); // 'a'
+```
+* toString() method is available on values that are numbers, Boolean, objects and strings. toString() is not available on null or undefined
+* String() casting function always returns a string regardless of the value.
+  * if the value has a toString() method it is called 
+  * for null or undefined it returns 'null' and 'undefined' respectively
+
+## Operators
+### Unary operators
+  * Operators that work on only one value
+```Javascript
+  var age = 29;
+  --age; // prefix
+  ++age; // the variable value is changed before the statement is evaluated: prefix
+  age--;
+  age++; // The variable value is changed after the statement is evaluated
+```
+### Bitwise operators
+  * Bitwise operators work with numbers at the base level. with bits that represent them in memory
+  * 
