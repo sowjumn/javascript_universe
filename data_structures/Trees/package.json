@@ -1,0 +1,19 @@
+{
+  "name": "Trees",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sowju",
+  "license": "ISC"
+}
