@@ -37,4 +37,15 @@ BinaryNode.prototype.getParent = function() {
   return this.parent;
 }
 
+BinaryNode.prototype.getDegree = function() {
+  var degree = 0;
+  if (this.hasLeft()) {
+    degree += 1;
+  }
+  if (this.hasRight()) {
+    degree += 1;
+  }
+  return degree;
+}
+
 module.exports = BinaryNode;

@@ -4,14 +4,6 @@ function BinaryTree(root) {
   this.root = root;
 }
 
-BinaryTree.prototype.level = function(node) {
-
-}
-
-BinaryTree.prototype.depth = function() {
-
-}
-
 BinaryTree.prototype.buildCompleteTree = function(arr) {
   var i;
   var tempNode = null;
