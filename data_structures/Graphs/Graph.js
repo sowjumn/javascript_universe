@@ -1,10 +1,7 @@
 var GraphNode = require('./GraphNode');
 
+//Undirected Graph
 function Graph() {
-  this.numVertices = 0;
-  this.numEdges = 0;
-  this.vertices = [];
-
   // holds an array of pointers to the head nodes
   this.adjList = {};
 }
